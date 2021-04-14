@@ -31,35 +31,17 @@
                     <img src="m2.png" class="logo">
                 </sup>
             </h1>
-
-	        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 addRoom_div">
-	            <img src="logo.png" class="logo">
-		        <h3 id="name_loggedIn"></h3>
-                <br>
-		        <h4>
-                    Create your Room:
-                </h4>
-		        <div class="form-group">
-		            <label>
-                        Room Name:
-                    </label>
-		            <input type="text" id="room_name" placeholder="Type your room name (which you want to create) here" class="form-control">
-                </div>
-        
-                <button id="addRoom_button" class="btn btn-primary" onclick="createRoom()">
-                    Create my Room
-                </button>
-                <br>
-                <br>
-	        </div>
-            <br>
-            <h3>
-                #Room Names
-            </h3>
-            <div id="other_roomNames">
-            </div>
+            <div id="output"></div>
         </center>
-    </body>
-    <script src="kwitter_room.js">
-    </script>
-</html>
+        <center>
+        <div id="input_div">
+            <input type="text" class="form-control" placeholder="Enter your message here" id="send_message">
+            <button onclick="send_msg()" class="btn btn-success">
+            Send
+            </button>
+        </div>
+    </center>
+        </body>
+        <script src="kwitter_page.js">
+        </script>
+        </html>

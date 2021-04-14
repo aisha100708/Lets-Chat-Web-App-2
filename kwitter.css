@@ -33,3 +33,27 @@ body {
   background: rgba(255,255,255,0.8);
   border-radius: 15px;
 }
+#output {
+  text-align: left;
+  background-color: honeydew;
+  margin-bottom: 20px;
+  width: 60%;
+  margin-left: 50px;
+  border-radius: 20px;
+  float: none;
+}
+#input_div {
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+  background-color: floralwhite;
+  float: none;
+margin-left: 140px;
+}
+#input_div input{
+  width: 60%;
+  margin-top: 20px;
+}
+#input_div button{
+  margin-bottom: 10px;
+}
