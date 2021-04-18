@@ -30,15 +30,15 @@ function getData() {
             childKey = childSnapshot.key;
             Room_names = childKey;
             //Start code
-            row = "<div class='roomName' id='"+Room_names+"' onclick='redirectToRoomName(this.id)'> #"+Room_names+" </div> <hr>";
+            row = "<div class='roomName' id='"+Room_names+"' onclick='redirectToRoomName(this.id)'>"+Room_names+" </div> <hr>";
             document.getElementById("other_roomNames").innerHTML += row;
             //End code
         });
     });
 }
 getData();
-function redirectToRoomName() {
-    localStorage.setItem("roomname", room_name);
+function redirectToRoomName(new_room) {
+    localStorage.setItem("roomname", new_room);
     window.location = "kwitter_page.html";
 }
 

@@ -47,9 +47,9 @@ function getData() {
                 sender_like = message_data['like'];
                 name_tag = "<h3>" + sender_name + "<img src='tick.png' class='user_tick' </h3> <hr>";
                 msg_tag = "<h4>" + sender_message + "</h4> <hr>";
-                like_btn = "<button id='"+firebase_message_id+"' class='btn btn-primary' onclick='update_like()' value='"+sender_like+"'> Like: '"+sender_like+"' <hr>";
-                span_likeTag = "<span class='gluphicon glyphicon-thumbs-up'> </span> </button>"
-                row = name_tag + msg_tag + like_btn;
+                like_btn = "<button id='"+firebase_message_id+"' class='btn btn-primary' onclick='update_like(this.id)' value='"+sender_like+"'> <hr>";
+                span_likeTag = "<span class='glyphicon glyphicon-thumbs-up'> Like: '"+sender_like+"' </span> </button> <hr>"
+                row = name_tag + msg_tag + like_btn + span_likeTag;
                 document.getElementById("output").innerHTML += row;
                 //End code
             }
